@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome – Captivate & Convert</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header" id="site-header">
+    <div class="container">
+
+      <a href="/" class="site-logo">
+        <img src="img/logo.png" alt="Welcome logo" class="site-logo__img">
+        <span class="site-logo__name">welcome</span>
+      </a>
+
+      <nav class="primary-nav">
+        <ul class="primary-nav__list">
+          <li><a href="#features" class="primary-nav__link">Features</a></li>
+          <li><a href="#pricing"  class="primary-nav__link">Pricing</a></li>
+          <li><a href="#events"   class="primary-nav__link">Events</a></li>
+          <li><a href="#about"    class="primary-nav__link">About</a></li>
+          <li><a href="#blog"     class="primary-nav__link">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="/support" class="header-actions__link">Support</a>
+        <a href="/login"   class="header-actions__link">Login</a>
+        <a href="/demo"    class="btn btn--primary btn--header">Demo</a>
+      </div>
+
+      <button class="burger" id="burger-btn" type="button">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <nav id="mobile-nav" class="mobile-nav">
+    <button class="mobile-nav__close" id="mobile-nav-close" type="button">
+      <span class="mobile-nav__close-line"></span>
+      <span class="mobile-nav__close-line"></span>
+    </button>
+    <ul class="mobile-nav__list">
+      <li><a href="#features" class="mobile-nav__link">Features</a></li>
+      <li><a href="#pricing"  class="mobile-nav__link">Pricing</a></li>
+      <li><a href="#events"   class="mobile-nav__link">Events</a></li>
+      <li><a href="#about"    class="mobile-nav__link">About</a></li>
+      <li><a href="#blog"     class="mobile-nav__link">Blog</a></li>
+    </ul>
+    <div class="mobile-nav__footer">
+      <a href="/support" class="mobile-nav__link mobile-nav__link--plain">Support</a>
+      <a href="/login"   class="btn btn--ghost">Login</a>
+      <a href="/demo"    class="btn btn--primary">Get a Demo</a>
+    </div>
+  </nav>
+
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero__fog"></div>
+
+      <!-- <img
+        class="hero__laptop-bg"
+        src="img/background-laptop.png"
+        alt=""
+      > -->
+
+      <div class="hero__content">
+        <h1 class="hero__title">Captivate &amp; Convert</h1>
+        <p class="hero__subtitle">
+          A webinar platform designed for marketers to host jaw-dropping experiences that drive revenue.
+        </p>
+        <div class="hero__cta">
+          <a href="/demo" class="btn btn--primary">Demo</a>
+          <a href="#how-it-works" class="btn btn--ghost">
+            <svg class="btn__play-icon" width="10" height="12" viewBox="0 0 10 12" fill="none">
+              <path d="M0.5 1L9.5 6L0.5 11V1Z" fill="currentColor"/>
+            </svg>
+            How it works
+          </a>
+        </div>
+      </div>
+
+      <div class="hero__laptop-wrap">
+        <div class="hero__preview">
+          <img
+            class="hero__preview-photo"
+            src="img/photo-video-preview.png"
+            alt="Webinar host presenting a live session"
+          >
+          <div class="hero__preview-overlay"></div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script/script.js"></script>
+</body>
+</html>
