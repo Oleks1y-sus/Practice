@@ -1228,3 +1228,115 @@ body.nav-open {
     border-radius: 10px;
   }
 }
+
+/* 
+   REVENUE SECTION 
+ */
+.revenue {
+  background-color: #F5F5F5; 
+  padding-block: clamp(4rem, 9vw, 8rem);
+  color: #0a0a0a;
+}
+.revenue__left {
+  margin-top: 86px;
+}
+.revenue__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+
+.revenue__title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-regular);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #0a0a0a;
+
+  font-size: clamp(3.5rem, 11vw, 9.5rem); 
+}
+
+.revenue__title-block {
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+.revenue__title-inline {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: clamp(0.6rem, 2vw, 1.5rem);
+}
+
+
+.revenue__badge {
+  display: inline-block;
+  width: clamp(130px, 15vw, 208px);  
+  height: clamp(72px, 8.3vw, 116px); 
+  border-radius: 64px; 
+  overflow: hidden;    
+  background-color: #F3FFAB; 
+  flex-shrink: 0;
+  align-self: center;
+}
+
+.revenue__badge img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.revenue__stat-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.revenue__stat-item {
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.revenue__stat-item:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.revenue__stat-number {
+  display: block;
+  font-size: clamp(2.5rem, 5vw, 4.2rem); 
+  font-weight: var(--fw-regular);
+  line-height: 1.1;
+  color: #0a0a0a;
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.revenue__stat-text {
+  font-size: clamp(0.95rem, 1.2vw, 1.05rem);
+  font-weight: var(--fw-regular);
+  color: #0a0a0a;
+  line-height: 1.4;
+}
+
+.revenue__stat-meta {
+  display: block;
+  font-size: 0.85rem;
+  color: rgba(10, 10, 10, 0.5); 
+  margin-top: 0.25rem;
+}
+
+@media (min-width: 769px) {
+  .revenue__inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+    gap: var(--sp-xl);
+    align-items: flex-start;  */
+  }
+
+  .revenue__stat-list {
+    padding-left: clamp(2rem, 6vw, 5rem); 
+  }
+}
