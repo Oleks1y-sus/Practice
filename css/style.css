@@ -689,6 +689,7 @@ body.nav-open {
 .brands__stat-label {
   font-size: 0.78rem;
   color: var(--clr-text-muted);
+  margin-left: -38px;
 }
 .muted{
   color: var(--clr-text-muted);
