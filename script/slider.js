@@ -16,7 +16,7 @@ const splide = new Splide('#testimonials-splide', {
   },
 });
 
-splide.mount({ AutoScroll: SplideAutoScroll });
+splide.mount({ AutoScroll: window.splide?.Extensions?.AutoScroll });
 
 document.getElementById('testimonials-prev').addEventListener('click', () => splide.go('<'));
 document.getElementById('testimonials-next').addEventListener('click', () => splide.go('>'));
