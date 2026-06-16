@@ -1822,3 +1822,63 @@ body.nav-open {
 .testimonials__arrow:hover {
   background: rgba(0, 0, 0, 0.08);
 }
+/* =============================================
+   OPPORTUNITIES SECTION
+============================================= */
+.opportunities {
+  background-color: #000000;
+  padding-block: clamp(4rem, 8vw, 8rem);
+}
+
+.opportunities__title {
+  font-size: clamp(3rem, 9vw, 8rem);
+  font-weight: var(--fw-regular);
+  color: #ffffff;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  margin-bottom: clamp(3rem, 6vw, 6rem);
+  position: relative;
+}
+
+.opportunities__title-small {
+  font-size: clamp(0.9rem, 3.1vw, 2.5rem);
+  font-weight: var(--fw-regular);
+  color: #ffffff;
+  line-height: 1.2;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0.5em;
+  margin-right: 0.2em;
+  text-align: right;
+}
+
+.opportunities__title-indent {
+  display: block;
+  padding-left: clamp(2rem, 20vw, 20.7rem);
+}
+
+.opportunities__list {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  width: 90%;
+}
+
+.opportunities__item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: clamp(1rem, 2vw, 1.5rem);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: clamp(1rem, 2vw, 1.35rem);
+  font-weight: var(--fw-regular);
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+.opportunities__item span {
+  flex: 1;
+}
+.column-layout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
