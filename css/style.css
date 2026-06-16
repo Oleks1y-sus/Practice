@@ -1667,3 +1667,128 @@ body.nav-open {
 
 
 }
+
+/* 
+   TESTIMONIALS SECTION
+ */
+.testimonials {
+  background-image: url('../img/testimonials-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  padding-bottom: clamp(3rem, 6vw, 5rem);
+  overflow: hidden;
+}
+
+.testimonials__top {
+  padding-top: clamp(3rem, 6vw, 5rem);
+  padding-bottom: clamp(2rem, 4vw, 3rem);
+}
+
+.testimonials__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.testimonials__title {
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: var(--fw-regular);
+  color: #0a0a0a;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.testimonials__controls {
+  display: flex;
+  gap: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+
+.testimonials__arrow {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0a0a;
+  border-radius: 50%;
+  transition: background var(--tr-fast);
+}
+
+.testimonials__arrow:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+
+.testimonials__splide .splide__track {
+  overflow: visible;
+}
+
+.testimonials__splide .splide__list {
+  align-items: stretch;
+}
+
+
+.testimonials__splide .splide__arrows {
+  display: none;
+}
+
+
+.testimonial-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: var(--r-md);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+}
+
+.testimonial-card__text {
+  font-size: clamp(0.9rem, 1.2vw, 1.05rem);
+  line-height: 1.65;
+  color: #0a0a0a;
+  flex: 1;
+}
+
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.testimonial-card__avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.testimonial-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.testimonial-card__name {
+  font-size: 0.9rem;
+  font-weight: var(--fw-medium);
+  color: #0a0a0a;
+}
+
+.testimonial-card__role,
+.testimonial-card__company-name {
+  font-size: 0.78rem;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.testimonial-card__logo {
+  height: 28px;
+  width: auto;
+  object-fit: contain;
+  object-position: left;
+}
