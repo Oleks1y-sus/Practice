@@ -2070,3 +2070,120 @@ body.nav-open {
     width: 100%;
   }
 }
+/* 
+   NEWSLETTER SECTION
+*/
+.newsletter {
+  position: relative;
+  background: #0a0a0a;
+  overflow: hidden;
+  padding-block: clamp(3rem, 7vw, 6rem);
+}
+
+.newsletter__bg {
+  position: absolute;
+  inset: 0;
+  background-image: url('../img/newsletter-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+}
+
+.newsletter .container {
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.newsletter__title {
+  font-size: clamp(1.75rem, 4vw, 3rem);
+  font-weight: var(--fw-regular);
+  color: #ffffff;
+  line-height: 1.15;
+  max-width: 320px;
+}
+
+.newsletter__sub {
+  font-size: 1.29rem;
+  margin-top: 1.5rem;
+}
+
+.newsletter__right {
+  display: flex;
+  align-items: flex-end;
+}
+
+.newsletter__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  width: 100%;
+  max-width: 480px;
+}
+
+.newsletter__field-wrap {
+  position: relative;
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
+.newsletter__input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 1rem 3rem 1rem 0;
+}
+
+.newsletter__input::placeholder {
+  color: rgba(255, 255, 255, 0.45);
+}
+
+.newsletter__submit {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity var(--tr-fast);
+}
+
+.newsletter__submit:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 769px) {
+  .newsletter__inner {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+  }
+
+  .newsletter__left {
+    flex: 0 0 auto;
+    margin-top: -55px;
+    padding-right: 2rem;
+    padding-top: 1rem;
+  }
+
+  .newsletter__right {
+    flex: 1;
+    justify-content: flex-end;
+  }
+  .newsletter__sub{
+    margin-top: 105px;
+  }
+  .newsletter__fields {
+    width: 100%;
+  }
+}
