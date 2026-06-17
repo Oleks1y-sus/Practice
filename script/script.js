@@ -54,3 +54,32 @@ mobileNav.querySelectorAll('a').forEach(link => {
 window.matchMedia('(min-width: 769px)').addEventListener('change', (e) => {
   if (e.matches) closeNav();
 });
+
+/* 
+   АНІМАЦІЯ ПРИ ПРОКРУТЦІ 
+  */
+document.addEventListener('DOMContentLoaded', () => {
+  const revealElements = document.querySelectorAll('.scroll-reveal');
+
+  const observerOptions = {
+    root: null,         // відносно вікна перегляду (viewport)
+    rootMargin: '0px 0px -80px 0px', // спрацьовує на 80px раніше, ніж елемент доторкнеться до низу екрана
+    threshold: 0.1      // 10% елемента має з'явитися на екрані
+  };
+
+  const scrollObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // Додаємо клас активного стану
+        entry.target.classList.add('is-visible');
+        // Відписуємося від спостереження за цим елементом, щоб анімація відпрацювала лише один раз
+        observer.unobserve(entry.target);
+      }
+    });
+  }, observerOptions);
+
+  // Запуск спостереження за кожним елементом
+  revealElements.forEach(element => {
+    scrollObserver.observe(element);
+  });
+});
