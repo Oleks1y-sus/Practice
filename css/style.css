@@ -2389,6 +2389,11 @@ body.nav-open {
     height: 100%;
   }
 }
+@media (max-width: 769px) {
+  .site-footer__logo {
+    width: 60px;
+  }
+}
 /* 
    АНІМАЦІЯ ПРИ ПРОКРУТЦІ 
   */
